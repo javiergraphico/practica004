@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@200;500;800&display=swap');
+
+:root{
+  --Light-red-opacity: rgba(255, 87, 87, 0.1);
+  --Light-red: rgb(255, 87, 87);
+  --Orangey-yellow-opacity: rgba(255, 176, 31, 0.1);
+  --Orangey-yellow: hsl(39, 100%, 56%);
+  --Green-teal-opacity: rgba(0, 189, 145, 0.1);
+  --Green-teal: hsl(166, 100%, 37%);
+  --Cobalt-blue-opacity: rgba(17, 37, 212, 0.1);
+  --Cobalt-blue: hsl(234, 85%, 45%);
+
+  --Violet-blue-circle: hsla(256, 72%, 46%, 1);
+  --Persian-blue-circle: hsla(241, 62%, 42%, 0.231);
+
+  --Light-slate-blue: hsl(252, 100%, 67%);
+  --Light-royal-blue: hsl(241, 81%, 54%);
+
+  --Dark-gray-blue: hsl(224, 30%, 27%);
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Hanken Grotesk', sans-serif;
+  font-size: 0.9375rem;
+}
+.container{
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card{
+  width: 375px;
+}
+.card__uno{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to top, var(--Light-royal-blue) 0%, var(--Light-slate-blue) 100%);
+  padding: 1.5em;
+  height: 45vh;
+  border-radius: 0 0 30px 30px;
+}
+.card__h4{
+  color: #fff;
+  text-align: center;
+  padding-bottom: 1em;
+  font-weight: 500;
+}
+.card__circle{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-image: linear-gradient(to bottom, var(--Violet-blue-circle) 0%, var(--Persian-blue-circle) 100%);
+}
+.card__h1{
+  font-size: 3.2em;
+  color: #ffffff;
+  font-weight: 800;
+}
+.card__p{
+  color: #fff;
+  font-weight: 300;
+  font-size: .9em;
+}
+.card__h3{
+  color: #fff;
+  font-weight: 800;
+  padding-top: 1em;
+}
+.card__p__card{
+  font-size: .9em;
+  font-weight: 300;
+  text-align: center;
+  color: #fff;
+  padding-top: 1em;
+  margin: 0 2rem;
+}
+.card__dos{
+  display: flex;
+  flex-direction: column;
+  padding: 1em 2em;
+}
+.card__dos__p{
+  color: #000;
+  padding-bottom: .8rem;
+}
+.card__content:nth-child(2){
+  background-color: var(--Light-red-opacity);
+}
+.card__content:nth-child(3){
+  background-color: var(--Orangey-yellow-opacity);
+}
+.card__content:nth-child(4){
+  background-color: var(--Green-teal-opacity);
+}
+.card__content:nth-child(5){
+  background-color: var(--Cobalt-blue-opacity);
+}
+
+.card__content{
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  border-radius: 12px;
+  margin-bottom: .6em;
+}
+.card__content__icon{
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+}
+.card__content__p{
+  margin-left: .4em;
+}
+.card__content__sumary{
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+}
+.card__content__parrafo span{
+  color: var(--Cobalt-blue);
+}
+
+.color_text_uno{
+  color: var(--Light-red);
+}
+.color_text_dos{
+  color: var(--Orangey-yellow);
+}
+.color_text_tres{
+  color: var(--Green-teal);
+}
+.color_text_cuatro{
+  color: var(--Cobalt-blue);
+}
+.card__button{
+  background-color: var(--Dark-gray-blue);
+  color: #fff;
+  width: 100%;
+  border: none;
+  border-radius: 12px;
+  padding: 1.1em 0;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: .9em;
+
+}
+@media (min-width: 768px){
+  .container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .card{
+    width: 700px;
+    height: 430px;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 22px 36px 52px -4px rgba(0,0,0,0.75);
+    border-radius: 30px 30px 30px 30px;
+  }
+  /* -------card uno------- */
+  .card__uno{
+    width: 50%;
+    height: 100%;
+    border-radius: 30px 30px 30px 30px;
+  }
+  .card__h4{
+    font-size: 1.3em;
+    padding-bottom: 1.3em;
+  }
+  .card__circle{
+    width: 160px;
+    height: 160px;
+  }
+  .card__h1{
+    font-size: 4em;
+  }
+  .card__h3{
+    font-size: 1.5em;
+  }
+  .card__p__card{
+    font-size: 1.2em;
+  }
+  /* -------card dos------- */
+  .card__dos{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+    padding: 2.2em 2em;
+  }
+  .card__content{
+    margin-bottom: .8em;
+  }
+  
+}
+
+
+
+
+
